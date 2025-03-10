@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="Nome"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/edtIdade"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="Idade"
+                android:inputType="number"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/edtUF"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="UF"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/edtCidade"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="Cidade"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="Telefone"
+                android:inputType="phone"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamanho de roupa:"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbP"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rbM"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rbG"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="G"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cores Preferidas:"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/chkVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vermelho"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/chkAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azul"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/chkVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#9C27B0"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
